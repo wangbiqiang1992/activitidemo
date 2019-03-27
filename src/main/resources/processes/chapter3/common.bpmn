@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://www.activiti.org/testm1510735932336" id="m1510735932336" name="">
+  <process id="process1"  isExecutable="true">
+    <startEvent id="start1" name="开始节点"></startEvent>
+    <sequenceFlow id="flow1" name="flow1" sourceRef="start1" targetRef="userTask1"></sequenceFlow>
+	<userTask id="userTask1" name="任务节点1"></userTask>
+	<sequenceFlow id="flow2" name = "flow2" sourceRef="userTask1" targetRef="userTask2"></sequenceFlow>
+	<userTask id="userTask2" name="任务节点2"></userTask>
+	<sequenceFlow id="flow3" name ="flow3" sourceRef="userTask2" targetRef="endEvent"></sequenceFlow>
+	<endEvent id="endEvent" name="结束节点"></endEvent>
+  </process>
+</definitions>
